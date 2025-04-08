@@ -1,0 +1,102 @@
+{
+    "whichkey.bindings": [
+        {
+        "command": "workbench.action.gotoSymbol",
+        "key": " ",
+        "name": "🎯 search symbol",
+        "type": "command"
+        },
+        {
+        "bindings": [
+            {
+            "command": "bookmarks.jumpToNext",
+            "key": "n",
+            "name": "🔖️ next bookmark",
+            "type": "command"
+            },
+            {
+            "command": "bookmarks.jumpToPrevious",
+            "key": "p",
+            "name": "🔖️ previous errors",
+            "type": "command"
+            },
+            {
+            "command": "bookmarks.toggle",
+            "key": "b",
+            "name": "🔖️ toggle bookmark",
+            "type": "command"
+            },
+            {
+            "command": "bookmarksExplorer.focus",
+            "key": "s",
+            "name": "🔖️ show bookmark pane",
+            "type": "command"
+            },
+            {
+            "command": "bookmarks.list",
+            "key": "l",
+            "name": "🔖️ list bookmarks",
+            "type": "command"
+            },
+            {
+            "command": "bookmarks.listFromAllFiles",
+            "key": "a",
+            "name": "🔖️ list all bookmarks",
+            "type": "command"
+            },
+            {
+            "command": "bookmarks.toggleLabeled",
+            "key": "e",
+            "name": "🔖️ edit current bookmark's label",
+            "type": "command"
+            }
+        ],
+        "key": "b",
+        "name": "🔖️ bookmark",
+        "type": "bindings"
+        },
+        {
+        "bindings": [
+            {
+            "command": "editor.debug.action.selectionToWatch",
+            "key": "w",
+            "name": "🛠️ add to debug watch",
+            "type": "command"
+            },
+            {
+            "command": "editor.debug.action.toggleBreakpoint",
+            "key": "b",
+            "name": "🛠️ toggle breakpoint",
+            "type": "command"
+            },
+            {
+            "command": "editor.debug.action.goToNextBreakpoint",
+            "key": "n",
+            "name": "🛠️ toggle breakpoint",
+            "type": "command"
+            },
+            {
+            "command": "editor.debug.action.goToPreviousBreakpoint",
+            "key": "p",
+            "name": "🛠️ toggle breakpoint",
+            "type": "command"
+            },
+            {
+            "command": "workbench.view.debug",
+            "key": "s",
+            "name": "🛠️:show debug pane",
+            "type": "command"
+            },
+            {
+            "command": "editor.debug.action.conditionalBreakpoint",
+            "key": "e",
+            "name": "🛠️:conditional breakpoint",
+            "type": "command"
+            }
+        ],
+        "key": "d",
+        "name": "🛠️ Debug",
+        "type": "bindings"
+        }
+    ]
+}

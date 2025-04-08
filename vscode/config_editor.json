@@ -1,0 +1,8 @@
+{
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "relative",
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 200
+}
