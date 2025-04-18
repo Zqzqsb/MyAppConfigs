@@ -1,0 +1,5 @@
+// @ .config/ghostty/config
+
+font-size=28
+background-blur=true
+background-opacity=0.8
