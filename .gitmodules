@@ -1,3 +1,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:Zqzqsb/NvimConfig.git
+[submodule "yabai"]
+	path = yabai
+	url = https://github.com/Zqzqsb/YabaiAutoConfig.git
