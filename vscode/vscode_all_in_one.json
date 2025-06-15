@@ -1,0 +1,1313 @@
+{
+  /**********************************/
+  /************* C_Cpp **************/
+  /**********************************/
+  "C_Cpp.errorSquiggles": "enabled",
+  "C_Cpp.intelliSenseEngine": "disabled",
+  /**********************************/
+  /********* Prettier-SQL ***********/
+  /**********************************/
+  "Prettier-SQL.commaPosition": "after",
+  "Prettier-SQL.expressionWidth": 120,
+  "Prettier-SQL.indentStyle": "standard",
+  "Prettier-SQL.keywordCase": "preserve",
+  "Prettier-SQL.linesBetweenQueries": 1,
+  "Prettier-SQL.newlineBeforeSemicolon": false,
+  /**********************************/
+  /*********** Languages ************/
+  /**********************************/
+  "[astro]": {
+    "editor.defaultFormatter": "astro-build.astro-vscode"
+  },
+  "[cpp]": {
+    "editor.defaultFormatter": "xaver.clang-format",
+    "editor.formatOnSaveMode": "modifications",
+    "files.insertFinalNewline": false,
+    "files.trimTrailingWhitespace": false
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 4
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python",
+    "editor.formatOnType": true
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "jinxdash.prettier-rust",
+    "editor.formatOnSave": false,
+    "editor.tabSize": 2
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format",
+    "editor.tabSize": 2
+  },
+  "[sql]": {
+    "editor.defaultFormatter": "inferrinizzard.prettier-sql-vscode",
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  /**********************************/
+  /*********** bookmarks ************/
+  /**********************************/
+  "bookmarks.saveBookmarksInProject": false,
+  "bookmarks.navigateThroughAllFiles": true,
+  "bookmarks.sideBar.expanded": true,
+  "bookmarks.gutterIconFillColor": "#15FE7B",
+  "bookmarks.gutterIconBorderColor": "#15FE7B",
+  /**********************************/
+  /*********** blockman *************/
+  /**********************************/
+  "editor.inlayHints.enabled": "on",
+  "editor.guides.indentation": true,
+  "editor.guides.bracketPairs": true,
+  "editor.wordWrap": "on",
+  "diffEditor.wordWrap": "on",
+  "blockman.n33A01B2FromDepth0ToInwardForAllBackgrounds": "45,0,0,2; none",
+  /**********************************/
+  /*********** boot-java ************/
+  /**********************************/
+  "boot-java.rewrite.reconcile": true,
+  /**********************************/
+  /************* cSpell *************/
+  /**********************************/
+  "cSpell.caseSensitive": true,
+  "cSpell.checkLimit": 100000000,
+  "cSpell.checkOnlyEnabledFileTypes": false,
+  "cSpell.diagnosticLevel": "Information",
+  /**********************************/
+  /************* clangd *************/
+  /**********************************/
+  "clangd.arguments": [
+    // 在后台自动分析文件（基于complie_commands)
+    "--background-index",
+    // 标记compelie_commands.json文件的目录位置
+    "--compile-commands-dir=build",
+    // 同时开启的任务数量
+    "-j=64",
+    // 告诉clangd用那个clang进行编译，路径参考which clang++的路径
+    "--query-driver=/usr/bin/clang++",
+    // clang-tidy功能
+    "--clang-tidy=false",
+    // "--clang-tidy-checks=performance-*,bugprone-*",
+    "--clang-tidy-checks=-*",
+    // 全局补全（会自动补充头文件）
+    "--all-scopes-completion",
+    // 更详细的补全内容
+    "--completion-style=detailed",
+    // 补充头文件的形式
+    "--header-insertion=iwyu",
+    // pch优化的位置
+    "--pch-storage=disk"
+  ],
+  /**********************************/
+  /************** cmake *************/
+  /**********************************/
+  "cmake.buildDirectory": "${workspaceFolder}/build/debug",
+  "cmake.configureOnOpen": false,
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  /**********************************/
+  /********** code-runner ***********/
+  /**********************************/
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ -std=c++17 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt"
+  },
+  "code-runner.runInTerminal": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.saveFileBeforeRun": true,
+  /**********************************/
+  /********* console-ninja **********/
+  /**********************************/
+  "console-ninja.featureSet": "Community",
+  "continue.showInlineTip": false,
+  /**********************************/
+  /************* debug **************/
+  /**********************************/
+  "debug.onTaskErrors": "showErrors",
+  "diffEditor.hideUnchangedRegions.enabled": true,
+  "diffEditor.ignoreTrimWhitespace": false,
+  /**********************************/
+  /************* editor *************/
+  /**********************************/
+  "editor.accessibilitySupport": "off",
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.autoIndent": "advanced",
+  "editor.autoSurround": "languageDefined",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "never"
+  },
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorStyle": "line",
+  "editor.cursorSurroundingLines": 2,
+  "editor.detectIndentation": true,
+  "editor.find.autoFindInSelection": "always",
+  "editor.fontFamily": "FiraCode Nerd Font, Iosevka, Source code Pro, Monaco,Hack Nerd Font, LXGW WenKai",
+  "editor.fontSize": 12,
+  "editor.formatOnSave": true,
+  // "editor.formatOnSaveMode": "modificationsIfAvailable",
+  // blockman change
+  // "editor.guides.bracketPairs": "active",
+  // "editor.guides.bracketPairs": false,
+  "editor.guides.bracketPairsHorizontal": true,
+  "editor.guides.highlightActiveIndentation": true,
+  // "editor.guides.indentation": true,
+  "editor.indentSize": "tabSize",
+  // blockman change
+  // "editor.inlayHints.enabled": "on",
+  // "editor.inlayHints.enabled": "off",
+  "editor.inlineSuggest.enabled": true,
+  "editor.insertSpaces": true,
+  "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": true,
+  "editor.minimap.autohide": false,
+  "editor.minimap.sectionHeaderFontSize": 10,
+  "editor.parameterHints.enabled": false,
+  "editor.quickSuggestionsDelay": 2,
+  "editor.renderWhitespace": "selection",
+  "editor.scrollBeyondLastLine": true,
+  "editor.scrollbar.vertical": "hidden",
+  "editor.semanticTokenColorCustomizations": {
+    "[Tokyo Night Storm]": {
+      "rules": {
+        "parameter": {
+          "foreground": "#e6c189"
+        }
+      }
+    },
+    "[Tokyo Night]": {
+      "rules": {
+        "parameter": {
+          "foreground": "#e6c189"
+        }
+      }
+    }
+  },
+  "editor.showFoldingControls": "always",
+  "editor.smoothScrolling": true,
+  "editor.stickyScroll.defaultModel": "outlineModel",
+  "editor.stickyScroll.enabled": true,
+  "editor.stickyScroll.maxLineCount": 3,
+  "editor.stickyScroll.scrollWithEditor": true,
+  "editor.suggest.preview": false,
+  "editor.tabSize": 2,
+  "editor.tokenColorCustomizations": {
+    "[Dracula Theme Soft]": {
+      "textMateRules": [
+        {
+          "scope": [
+            "comment.block",
+            "comment",
+            "comment.line",
+            "comment.block.documentation"
+          ],
+          "settings": {
+            "foreground": "#469135"
+          }
+        }
+      ]
+    }
+  },
+  "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+  // blockman change
+  // "editor.wordWrap": "on",
+  "editor.wordWrapColumn": 120,
+  /**********************************/
+  /*********** errorLens ************/
+  /**********************************/
+  "errorLens.enabledDiagnosticLevels": ["error", "warning"],
+  /**********************************/
+  /*********** explorer *************/
+  /**********************************/
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  /**********************************/
+  /********** extensions ************/
+  /**********************************/
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+    // "vscodeVim.vim": 1
+  },
+  "extensions.ignoreRecommendations": true,
+  /**********************************/
+  /************* files **************/
+  /**********************************/
+  "files.associations": {
+    "**/*.cnf": "ini",
+    "**/*.inc": "sql",
+    "**/*.test": "sql",
+    "*.0": "log",
+    "*.err": "log",
+    "*.result": "sql"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 500,
+  "files.exclude": {
+    "**/.DS_Store": false,
+    "**/.git": false,
+    "out": false
+  },
+  /**********************************/
+  /******** find-it-faster **********/
+  /**********************************/
+  "find-it-faster.general.useGitIgnoreExcludes": false,
+  "find-it-faster.general.useWorkspaceSearchExcludes": false,
+  /**********************************/
+  /*********** git-graph ************/
+  /**********************************/
+  "git-graph.maxDepthOfRepoSearch": 1,
+  /**********************************/
+  /************** git ***************/
+  /**********************************/
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "git.ignoreLegacyWarning": true,
+  "github.copilot.chat.inlineChatCompletionTrigger.enabled": true,
+  "github.copilot.chat.inlineChatHint.enabled": true,
+  "github.copilot.chat.scopeSelection": true,
+  "github.copilot.chat.search.semanticTextResults": true,
+  /**********************************/
+  /********* github.copilot *********/
+  /**********************************/
+  "github.copilot.editor.enableAutoCompletions": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
+    "scminput": false,
+    "yaml": true
+  },
+  /**********************************/
+  /************ gitlens *************/
+  /**********************************/
+  "gitlens.advanced.messages": {
+    "suppressGitVersionWarning": true
+  },
+  "gitlens.ai.model": "github:gpt-4o",
+  "gitlens.views.commits.avatars": false,
+  "gitlens.views.showRelativeDateMarkers": false,
+  /**********************************/
+  /*************** go ***************/
+  /**********************************/
+  "go.alternateTools": {
+    "experimentalWorkspaceModule": true
+  },
+  "go.lintOnSave": "file",
+  "go.toolsManagement.autoUpdate": true,
+  "go.vetOnSave": "off",
+  /**********************************/
+  /************** html **************/
+  /**********************************/
+  "html.format.wrapAttributes": "force",
+  /**********************************/
+  /********* indentRainbow **********/
+  /**********************************/
+  "indentRainbow.lightIndicatorStyleLineWidth": 1,
+  /**********************************/
+  /********** indenticator **********/
+  /**********************************/
+  "indenticator.color.dark": "#8fcfbf",
+  "indenticator.hover.trimLinesShorterThan": 0,
+  "indenticator.languageSpecific": {},
+  "indenticator.showCurrentDepthInStatusBar": true,
+  "indenticator.showIndentGuide": true,
+  "indenticator.width": 1,
+  /**********************************/
+  /*********** interview ************/
+  /**********************************/
+  "interview.updateNotification": false,
+  "interview.workspaceFolder": "/Users/albert/CodeSpace/dailyFrontend",
+  "javascript.suggest.paths": false,
+  /**********************************/
+  /********** javascript ************/
+  /**********************************/
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  /**********************************/
+  /********** liveServer ************/
+  /**********************************/
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  /**********************************/
+  /************ makefile ************/
+  /**********************************/
+  "makefile.configureOnOpen": true,
+  /**********************************/
+  /*********** notebook *************/
+  /**********************************/
+  "notebook.lineNumbers": "on",
+  /**********************************/
+  /************ prettier ************/
+  /**********************************/
+  "prettier.printWidth": 1200,
+  "prettier.singleAttributePerLine": true,
+  "prettier.tabWidth": 2,
+  "prettier.useTabs": false,
+  /**********************************/
+  /******* projectManager.git *******/
+  /**********************************/
+  "projectManager.git.baseFolders": ["/Users/albertwang/CodeSpace"],
+  "projectManager.git.ignoredFolders": [
+    "node_modules",
+    "out",
+    "typings",
+    "test",
+    ".haxelib"
+  ],
+  "projectManager.sortList": "Name",
+  /**********************************/
+  /************ python **************/
+  /**********************************/
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style={based_on_style: google, indent_width: 4, column_limit: 199}"
+  ],
+  /**********************************/
+  /********** rainbowTags ***********/
+  /**********************************/
+  "rainbowTags.allowEverywhere": true,
+  "rainbowTags.denylistTags": [
+    "!DOCTYPE",
+    "html",
+    "head",
+    "meta",
+    "body",
+    "title",
+    "link",
+    "script",
+    "base",
+    "style",
+    "area",
+    "br",
+    "col",
+    "embed",
+    "hr",
+    "img",
+    "input",
+    "param",
+    "source",
+    "track",
+    "wbr",
+    " "
+  ],
+  /**********************************/
+  /********** rainbowTags ***********/
+  /**********************************/
+  "rainbowTags.supportedLanguages": [
+    "html",
+    "php",
+    "twig",
+    "blade",
+    "smarty",
+    "xml",
+    "vue",
+    "jsx",
+    "tsx"
+  ],
+  /**********************************/
+  /*********** redhat.telemetry *****/
+  /**********************************/
+  "redhat.telemetry.enabled": true,
+  /**********************************/
+  /*********** references ***********/
+  /**********************************/
+  "references.preferredLocation": "peek",
+  /**********************************/
+  /*********** remote ***********/
+  /**********************************/
+  "remote.SSH.connectTimeout": 60,
+  "remote.SSH.useLocalServer": false,
+  "remoteHub.uncommittedChangesOnEntry": "none",
+  "remote.autoForwardPorts": false,
+  /**********************************/
+  /************* rust ***************/
+  /**********************************/
+  "rust-analyzer.testExplorer": true,
+  /**********************************/
+  /************ search **************/
+  /**********************************/
+  "search.exclude": {
+    "out": true
+  },
+  "search.showLineNumbers": true,
+  /**********************************/
+  /************ security ************/
+  /**********************************/
+  "security.promptForRemoteFileProtocolHandling": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  /**********************************/
+  /********** shellformat ***********/
+  /**********************************/
+  "shellformat.flag": "-i=2",
+  /**********************************/
+  /************ terminal ************/
+  /**********************************/
+  "terminal.external.linuxExec": "",
+  "terminal.external.osxExec": "/usr/local/bin/alacritty",
+  // "terminal.integrated.enableMultiLinePasteWarning": false,
+  "terminal.integrated.env.linux": {},
+  "terminal.integrated.env.osx": {},
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.macOptionClickForcesSelection": true,
+  /**********************************/
+  /*********** todo-tree ************/
+  /**********************************/
+  "todo-tree.general.tags": [
+    "BUG",
+    "FIXME",
+    "HACK",
+    "TODO",
+    "[ ]",
+    "[x]",
+    "TAGS"
+  ],
+  "todo-tree.highlights.customHighlight": {
+    "BUG": {
+      "background": "#da1111",
+      "foreground": "#111111",
+      "icon": "bug",
+      "iconColour": "#ff1111",
+      "rulerColour": "#ffffff"
+    },
+    "TAGS": {
+      "background": "#4aadcd",
+      "foreground": "#2a2a2a"
+    },
+    "TODO": {
+      "background": "#4dad1d",
+      "foreground": "#1a1a1a"
+    }
+  },
+  "todo-tree.highlights.enabled": true,
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  // use path intellisense
+  "typescript.suggest.paths": false,
+  /**********************************/
+  /********** typescript ************/
+  /**********************************/
+  "typescript.tsc.autoDetect": "off",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  /**********************************/
+  /************** vim ***************/
+  /**********************************/
+  // "vim.vimrc.enable": true,
+  // "vim.vimrc.path": "~/.vsvimrc",
+  "vim.easymotion": true,
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+  // not open the fold when open the file
+  "vim.foldfix": true,
+  "vim.substitutionColor": "#fefffe", // 当前搜索匹配的背景色
+  "vim.highlightedyank.enable": true,
+  "vim.hlsearch": true,
+  "vim.visualstar": true, // * 和 # 在可视模式下生效
+  "vim.showMarksInGutter": false,
+  "vim.searchHighlightColor": "#ffad66", // 非当前搜索匹配的背景色
+  "vim.searchHighlightTextColor": "#0c0c0c", // 非当前搜索匹配的文字颜色
+  "vim.searchMatchColor": "#fafafa",
+  "vim.searchMatchTextColor": "#0c0c0c", // 非当前搜索匹配的文字颜色
+  "vim.sneakUseIgnorecaseAndSmartcase": true,
+  // not use system clipboard
+  "vim.useSystemClipboard": false,
+  "accelerated.accelerationTable": [10, 17, 25, 30, 32, 36, 38, 40],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["j"],
+      "commands": [
+        {
+          "command": "accelerated.cursorDown"
+        }
+      ]
+    },
+    {
+      "before": ["k"],
+      "commands": [
+        {
+          "command": "accelerated.cursorUp"
+        }
+      ]
+    },
+    // quick go to function
+    {
+      "after": ["]", "[", "%", "^", "%", "^", "w"],
+      "before": ["g", "f"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "after": ["<C-w>", "w"],
+      "before": ["<S-tab>"]
+    },
+    {
+      "before": ["<C-w>", "j"],
+      "commands": ["workbench.action.moveEditorToBelowGroup"]
+    },
+    {
+      "before": ["<C-w>", "k"],
+      "commands": ["workbench.action.moveEditorToAboveGroup"]
+    },
+    {
+      "before": ["<C-w>", "h"],
+      "commands": ["workbench.action.moveEditorToLeftGroup"]
+    },
+    {
+      "before": ["<C-w>", "l"],
+      "commands": ["workbench.action.moveEditorToRightGroup"]
+    },
+    {
+      "before": ["<C-w>", "z"],
+      "commands": ["workbench.action.maximizeEditorHideSidebar"]
+    },
+    {
+      "after": ["<leader>", "<leader>", "s"],
+      "before": ["r"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    },
+    // g
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "h"],
+      "commands": ["editor.action.referenceSearch.trigger"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "after": ["y", "/", "\\V", "<C-r>", "\"", "<CR>"],
+      "before": ["*"]
+    },
+    {
+      "after": ["y", "?", "\\V", "<C-r>", "\"", "<CR>"],
+      "before": ["#"]
+    },
+    // vim whichkey
+    {
+      "before": ["<space>"],
+      "commands": ["whichkey.show"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditorInGroup"]
+    },
+    {
+      "after": ["<C-w>", "w"],
+      "before": ["<S-tab>"]
+    },
+    {
+      "before": ["<C-w>", "z"],
+      "commands": ["workbench.action.toggleEditorWidths"]
+    },
+    // quick go to function
+    {
+      "after": ["]", "[", "%", "^", "w"],
+      "before": ["g", "f"]
+    }
+  ],
+  /**********************************/
+  /******** vscode-neovim ***********/
+  /**********************************/
+  "vscode-neovim.highlightGroups.highlights": {
+    "IncSearch": {
+      "backgroundColor": "#90EE90",
+      "color": "#1C1C1C",
+      "font-weight": 700
+    },
+    "Search": {
+      "backgroundColor": "#98FB98",
+      "color": "#1C1C1C",
+      "font-weight": 700
+    }
+  },
+  "vscode-neovim.neovimClean": false,
+  "vscode-neovim.neovimExecutablePaths.darwin": "/opt/homebrew/bin/nvim",
+  /**********************************/
+  /************** vue ***************/
+  /**********************************/
+  "vue.updateImportsOnFileMove.enabled": true,
+  /**********************************/
+  /************ which-key ***********/
+  /**********************************/
+  "whichkey.bindings": [
+    {
+      "command": "workbench.action.gotoSymbol",
+      "key": " ",
+      "name": "🎯 search symbol",
+      "type": "command"
+    },
+    {
+      "bindings": [
+        {
+          "command": "bookmarks.jumpToNext",
+          "key": "n",
+          "name": "🔖️ next bookmark",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.jumpToPrevious",
+          "key": "p",
+          "name": "🔖️ previous errors",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.toggle",
+          "key": "b",
+          "name": "🔖️ toggle bookmark",
+          "type": "command"
+        },
+        {
+          "command": "bookmarksExplorer.focus",
+          "key": "s",
+          "name": "🔖️ show bookmark pane",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.list",
+          "key": "l",
+          "name": "🔖️ list bookmarks",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.listFromAllFiles",
+          "key": "a",
+          "name": "🔖️ list all bookmarks",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.clear",
+          "key": "c",
+          "name": "🔖️ bookmark clear in current file",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.clearFromAllFiles",
+          "key": "C",
+          "name": "🔖️ bookmark clear in all files",
+          "type": "command"
+        },
+        {
+          "command": "bookmarks.toggleLabeled",
+          "key": "e",
+          "name": "🔖️ edit current bookmark's label",
+          "type": "command"
+        }
+      ],
+      "key": "b",
+      "name": "🔖️ bookmark",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "command": "editor.debug.action.selectionToWatch",
+          "key": "w",
+          "name": "🛠️ add to debug watch",
+          "type": "command"
+        },
+        {
+          "command": "editor.debug.action.toggleBreakpoint",
+          "key": "b",
+          "name": "🛠️ toggle breakpoint",
+          "type": "command"
+        },
+        {
+          "command": "editor.debug.action.goToNextBreakpoint",
+          "key": "n",
+          "name": "🛠️ toggle breakpoint",
+          "type": "command"
+        },
+        {
+          "command": "editor.debug.action.goToPreviousBreakpoint",
+          "key": "p",
+          "name": "🛠️ toggle breakpoint",
+          "type": "command"
+        },
+        {
+          "command": "workbench.view.debug",
+          "key": "s",
+          "name": "🛠️:show debug pane",
+          "type": "command"
+        },
+        {
+          "command": "editor.debug.action.conditionalBreakpoint",
+          "key": "e",
+          "name": "🛠️:conditional breakpoint",
+          "type": "command"
+        }
+      ],
+      "key": "d",
+      "name": "🛠️ Debug",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "command": "workbench.actions.view.problems",
+          "key": "l",
+          "name": "✅ list errors",
+          "type": "command"
+        },
+        {
+          "command": "editor.action.marker.nextInFiles",
+          "key": "n",
+          "name": "✅️ next errors",
+          "type": "command"
+        },
+        {
+          "command": "editor.action.marker.prevInFiles",
+          "key": "p",
+          "name": "✅️ previous errors",
+          "type": "command"
+        },
+        {
+          "command": "editor.action.showHover",
+          "key": "e",
+          "name": "✅️ show current error",
+          "type": "command"
+        }
+      ],
+      "key": "e",
+      "name": "✅️ errors",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "commands": [
+            // why multip focus next input box?
+            // force to focus on search editor
+            "search.action.openNewEditorToSide",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox"
+          ],
+          "key": "s",
+          "name": "❓️ search in project on editor",
+          "type": "commands"
+        },
+        {
+          "command": "rerunSearchEditorSearch",
+          "key": "r",
+          "name": "❓️ search refresh",
+          "type": "command"
+        },
+        {
+          "commands": [
+            // why multip focus next input box?
+            // force to focus on search editor
+            "search.action.openEditor",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox",
+            "search.focus.nextInputBox"
+          ],
+          "key": "o",
+          "name": "❓️ open search editor",
+          "type": "commands"
+        },
+        {
+          "command": "search.action.focusQueryEditorWidget",
+          "key": "p",
+          "name": "❓️ focus on input",
+          "type": "command"
+        },
+        {
+          "command": "search.action.focusFilesToExclude",
+          "key": "e",
+          "name": "❓️ focus on files to exclude",
+          "type": "command"
+        },
+        {
+          "command": "search.action.focusFilesToInclude",
+          "key": "i",
+          "name": "❓️ focus on files to include",
+          "type": "command"
+        }
+      ],
+      "key": "s",
+      "name": "❓️ search in project on editor",
+      "type": "bindings"
+    },
+    {
+      "command": "workbench.action.findInFiles",
+      "key": "/",
+      "name": "❔️ search in project",
+      "type": "command"
+    },
+    {
+      "command": "workbench.action.showAllSymbols",
+      "key": "#",
+      "name": "🧲️ search symbol in project",
+      "type": "command"
+    },
+    {
+      "bindings": [
+        {
+          "command": "move",
+          "key": "p",
+          "name": "️️🥎 pin editor",
+          "type": "command"
+        },
+        {
+          "command": "workbench.action.unpinEditor",
+          "key": "u",
+          "name": "️🥎 unpin editor",
+          "type": "command"
+        },
+        {
+          "command": "workbench.action.toggleZenMode",
+          "key": "z",
+          "name": "️🥎 toggle zen mode",
+          "type": "command"
+        }
+      ],
+      "key": "w",
+      "name": "🥎 window",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "command": "workbench.action.moveEditorToFirstGroup",
+          "key": "1",
+          "name": "️️🔫 move to group 1",
+          "type": "command"
+        },
+        {
+          "commands": [
+            // use multiple commands to mock
+            "workbench.action.moveEditorToFirstGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.evenEditorWidths"
+          ],
+          "key": "2",
+          "name": "️️🔫 move to group 2",
+          "type": "commands"
+        },
+        {
+          "commands": [
+            // use multiple commands to mock
+            "workbench.action.moveEditorToFirstGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.evenEditorWidths"
+          ],
+          "key": "3",
+          "name": "️️🔫 move to group 3",
+          "type": "commands"
+        },
+        {
+          "commands": [
+            // use multiple commands to mock
+            "workbench.action.moveEditorToFirstGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.evenEditorWidths"
+          ],
+          "key": "4",
+          "name": "️️🔫 move to group 4",
+          "type": "commands"
+        },
+        {
+          "commands": [
+            // use multiple commands to mock
+            "workbench.action.moveEditorToFirstGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.evenEditorWidths"
+          ],
+          "key": "5",
+          "name": "️️🔫 move to group 5",
+          "type": "commands"
+        },
+        {
+          "commands": [
+            // use multiple commands to mock
+            "workbench.action.moveEditorToFirstGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.moveEditorToNextGroup",
+            "workbench.action.evenEditorWidths"
+          ],
+          "key": "6",
+          "name": "️️🔫 move to group 6",
+          "type": "commands"
+        }
+      ],
+      "key": "m",
+      "name": "🔫 move",
+      "type": "bindings"
+    },
+    {
+      "command": "workbench.action.terminal.toggleTerminal",
+      "key": "t",
+      "name": "🖥️ terminal",
+      "type": "command"
+    },
+    {
+      "command": "workbench.panel.testResults.view.focus",
+      "key": "T",
+      "name": "🧪 Test",
+      "type": "command"
+    },
+    {
+      "command": "workbench.action.gotoSymbol",
+      "key": "@",
+      "name": "🎯 search symbol",
+      "type": "command"
+    },
+    {
+      "command": "markdown-preview-enhanced.openPreviewToTheSide",
+      "key": "p",
+      "name": "open markdown preview",
+      "type": "open markdown preview"
+    },
+    {
+      "command": "copyRelativeFilePath",
+      "key": "C",
+      "name": "📁 copy relative path",
+      "type": "command"
+    },
+    {
+      "command": "workbench.action.showCommands",
+      "key": "c",
+      "name": "⌘ command",
+      "type": "command"
+    },
+    {
+      "command": "outline.focus",
+      "key": "l",
+      "name": "🦁️ outline",
+      "type": "command"
+    },
+    {
+      "commands": [
+        "workbench.action.maximizeEditorHideSidebar",
+        "workbench.action.evenEditorWidths"
+      ],
+      "key": "=",
+      "name": "= equal windows",
+      "type": "command"
+    },
+    {
+      "command": "workbench.action.zoomReset",
+      "key": "Z",
+      "name": "👀 zoom",
+      "type": "commands"
+    },
+    {
+      "command": "workbench.action.maximizeEditorHideSidebar",
+      "key": "z",
+      "name": "💪 max and hide sidebar",
+      "type": "commands"
+    },
+    {
+      "bindings": [
+        {
+          "command": "references-view.showCallHierarchy",
+          "key": "r",
+          "name": "🔑️ show reference",
+          "type": "command"
+        },
+        {
+          "command": "references-view.showIncomingCalls",
+          "key": "i",
+          "name": "🔑️ show incoming",
+          "type": "command"
+        },
+        {
+          "command": "references-view.showOutgoingCalls",
+          "key": "o",
+          "name": "🔑️ show outgoing",
+          "type": "command"
+        },
+        {
+          "command": "references-view.findReferences",
+          "key": "f",
+          "name": "🔑️ find references",
+          "type": "command"
+        }
+      ],
+      "key": "R",
+      "name": "🔑️ reference",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "command": "roo-cline.focusInput",
+          "key": "p",
+          "name": "🦘 roo-cline: foucs input",
+          "type": "command"
+        },
+        {
+          "command": "roo-cline.improveCode",
+          "key": "i",
+          "name": "🦘 roo-cline: improve code",
+          "type": "command"
+        },
+        {
+          "command": "roo-cline.addToContext",
+          "key": "a",
+          "name": "🦘 roo-cline: add to context",
+          "type": "command"
+        },
+        {
+          "command": "roo-cline.openInNewTab",
+          "key": "o",
+          "name": "🦘 roo-cline: open in new tab",
+          "type": "command"
+        }
+      ],
+      "key": "r",
+      "name": "🦘 Roo Code",
+      "type": "bindings"
+    },
+    {
+      "key": "a",
+      "name": "📅 recently panel",
+      "type": "command",
+      "command": "workbench.action.quickOpenLeastRecentlyUsedEditor"
+    },
+    {
+      "command": "breadcrumbs.focusAndSelect",
+      "key": "j",
+      "name": "🐰 jump to variables",
+      "type": "command"
+    },
+    {
+      "command": "editor.action.focusStickyScroll",
+      "key": "k",
+      "name": "🐳 focus on sticky top bar",
+      "type": "command"
+    },
+    {
+      "bindings": [
+        {
+          "command": "workbench.files.action.focusFilesExplorer",
+          "key": "f",
+          "name": "📗 file explorer",
+          "type": "command"
+        },
+        {
+          "commands": [
+            "workbench.files.action.focusFilesExplorer",
+            "list.find"
+          ],
+          "key": "s",
+          "name": "📗 file explorer search",
+          "type": "commands"
+        }
+      ],
+      "key": "f",
+      "name": "📗 file explorer",
+      "type": "bindings"
+    },
+    {
+      "bindings": [
+        {
+          "command": "workbench.view.scm",
+          "key": "s",
+          "name": "🌴 open git pane",
+          "type": "command"
+        },
+        {
+          "command": "git.openChange",
+          "key": "d",
+          "name": "🌴 show diff",
+          "type": "command"
+        },
+        {
+          "command": "workbench.action.editor.previousChange",
+          "key": "p",
+          "name": "🌴 go to previous change",
+          "type": "command"
+        },
+        {
+          "command": "workbench.action.editor.nextChange",
+          "key": "n",
+          "name": "🌴 go to next change",
+          "type": "command"
+        }
+      ],
+      "key": "g",
+      "name": "🌴 git operation",
+      "type": "bindings"
+    }
+  ],
+  "whichkey.showIcons": true,
+  /**********************************/
+  /************ window **************/
+  /**********************************/
+  "window.zoomLevel": 1.1,
+  /**********************************/
+  /************ workbench ***********/
+  /**********************************/
+  "workbench.activityBar.location": "top",
+  "workbench.activityBar.orientation": "vertical",
+  "workbench.colorCustomizations": {
+    "[Ayu Mirage Bordered]": {
+      "activityBarTop.foreground": "#f2f6ff",
+      "activityBarTop.inactiveForeground": "#b9bbbf",
+      "breadcrumb.activeSelectionForeground": "#ffffffca",
+      "breadcrumb.foreground": "#d3d3d3d0",
+      "commandCenter.foreground": "#f4f5f7",
+      "commandCenter.inactiveForeground": "#f4f5f7",
+      "dropdown.border": "#f4f5f7",
+      "dropdown.foreground": "#f4f5f7",
+      "editorCursor.foreground": "#d5ff80",
+      "editorHint.border": "#0fefc0",
+      "editor.selectionBackground": "#ff6742",
+      "editorHint.foreground": "#f01fcf",
+      "editorLineNumber.activeForeground": "#6dfef6",
+      "editorLineNumber.foreground": "#e2e2e29c",
+      "icon.foreground": "#c9c9c9",
+      "list.activeSelectionForeground": "#f4f5f7",
+      "list.deemphasizedForeground": "#f4f5f7",
+      "list.errorForeground": "#ff6742",
+      "list.focusForeground": "#f4f5f7",
+      "list.hoverForeground": "#f4f5f7",
+      "list.inactiveSelectionForeground": "#f4f5f7",
+      "list.inactiveSelectionIconForeground": "#fdfdfde4",
+      "list.invalidItemForeground": "#f4f5f7",
+      "peekView.border": "#44475a",
+      "peekViewEditor.matchHighlightBackground": "#264f7d",
+      "peekViewResult.fileForeground": "#d5ff80",
+      "peekViewResult.lineForeground": "#73d0ff",
+      "peekViewResult.matchHighlightBackground": "#15173e",
+      "quickInput.foreground": "#c7c7c7",
+      "sideBar.foreground": "#b9c0cc",
+      // "tab.activeBorder": "#00ffc8",
+      "tab.activeForeground": "#cfcfdf",
+      "tab.inactiveForeground": "#cfcfdf"
+    },
+    "editor.findMatchBackground": "#ffffffb0",
+    "editor.findMatchBorder": "#3eff64",
+    "editor.findMatchForeground": "#009b89",
+    "editor.findMatchHighlightBackground": "#ff00ffe0",
+    // "editor.findMatchHighlightBorder":"#ff00ff",
+    // "editor.findMatchHighlightForeground": "#a4b2ffd1",
+    "editor.wordHighlightBackground": "#13131320",
+    "editor.wordHighlightBorder": "#3eff64",
+    "editorCursor.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#005f87",
+    "statusBar.debuggingBackground": "#005f87",
+    "statusBar.background": "#005f87",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff",
+    "editor.lineHighlightBorder": "#9fced11f",
+    "editor.lineHighlightBackground": "#1073cf2d"
+  },
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "workbench.localHistory.enabled": false,
+  "workbench.tree.expandMode": "singleClick",
+  "workbench.tree.indent": 10,
+  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.iconTheme": "material-icon-theme",
+  /**********************************/
+  /************ custom ui ***********/
+  /**********************************/
+  "vscode_custom_css.imports": [
+    // Absolute file paths for your custom CSS/JS files
+    // For Mac or Linux:
+    // "file:///Users/[your-username]/[path-of-custom-css]/vscode-custom/style.css",
+    // "file:///Users/[your-username]/[path-of-custom-css]/vscode-custom/script.js"
+    "file:///Users/albert/.config/vscode-custom/style.css"
+  ],
+  /**********************************/
+  /************ zen mode ************/
+  /**********************************/
+  "zenMode.fullScreen": false,
+  "zenMode.hideLineNumbers": false,
+  "zenMode.showTabs": "single",
+  "zenMode.silentNotifications": false,
+  /**********************************/
+  /************ roo code ************/
+  /**********************************/
+  "roo-cline.customStoragePath": "/home/albert/.config/roo-code",
+  "roo-cline.allowedCommands": [
+    "npm test",
+    "npm install",
+    "tsc",
+    "git log",
+    "git diff",
+    "git show"
+  ],
+  "remote.SSH.remotePlatform": {
+    "work161": "linux",
+    "NISL_Superman_AliCloud": "linux"
+  }
+  // "http.proxy": "http://127.0.0.1:7890"
+}
